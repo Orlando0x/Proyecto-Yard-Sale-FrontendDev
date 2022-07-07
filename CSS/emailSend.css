@@ -48,7 +48,6 @@ header img {
     font-weight: 300;
     text-align: center;
     font-size: 1.6rem;
-
 }
 .container picture {
     display: grid;
@@ -115,6 +114,6 @@ div p a {
 
 @media (min-width: 640px) {
     header img {
-        visibility: hidden;
+        display: none;
     }
 }

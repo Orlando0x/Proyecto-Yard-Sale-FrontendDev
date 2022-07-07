@@ -5,30 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Email has been send!</title>
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="./CSS/emailSend.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <main>
-        <section class="container">
+        <div class="container">
             <header>
                 <img src="./logos/logo_yard_sale.svg" alt="LOGO">
             </header>
-            <form action="/" class="main-form">
-                <label for="email">Email address</label>
-                <input type="email" id="email" placeholder="email@example.com">
-                <label for="password">Password</label>
-                <input type="password" id="password" placeholder="*********">
-                <button type="submit">Log in</button>
+            <h1 class="section-create">Email has been send!</h1>
+            <p class="section-enter">Please check your inbox for instructions on how to reset the password</p>
+            <picture class="section-send">
+                <img src="icons/email.svg" alt="send">
+            </picture>
+            <form action="/" class="section-form">
+                <button type="submit">Login</button>
             </form>
-            <p class="div-resend"><a href="#">Forgot my password</a></p>
-            <Footer>
-                <button class="signUp" type="submit">Sign up</button>
-            </Footer>
-        </section>
-        
+            <p class="div-resend">Didn't receive the email? <a href="#">Resend</a></p>
+        </div>
     </main>
 </body>
 </html>
