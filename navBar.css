@@ -1,0 +1,105 @@
+:root{
+    --white: #FFFFFF;
+    --black: #000000;
+    --dark: #232830;
+    --text-input-field: #F7F7F7;
+    --very-light-pink: #C7C7C7;
+    --hospital-green: #ACD9B2;
+}
+html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+}
+body{
+    margin: 0;
+    font-size: 1.4rem;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 44px;
+    border-bottom: 2px solid var(--text-input-field);
+
+}
+.nav .menu {
+    margin-left: 16px;
+}
+.nav .cart {
+    margin-right: 16px;
+}
+
+@media (min-width: 840px) {
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 60px;
+        border-bottom: 2px solid var(--text-input-field);
+    
+    }
+    .nav-left {
+        display: flex;
+        align-items: center;
+        margin-left: 50px;
+    }
+    .nav .logo img{
+        height: 32px;
+        margin-left:;
+    }
+    .nav .options {
+        display: flex;
+    }
+    .nav .options li {
+        list-style: none;
+    }
+    .nav .options li a {
+        text-decoration: none;
+        color: var(--very-light-pink);
+        font-weight: 500;
+        font-size: 1.6rem;
+        padding: 8px;
+    }
+    .nav .options li a:hover {
+        height: 40px;
+        width: 40px;
+        border: 1px solid var(--hospital-green);
+        border-radius: 12px;
+        color: #ACD9B2;
+    }
+    .nav-right {
+        display: flex;
+        align-items: center;
+    
+        margin-right: 50px;
+    
+    }
+    .nav-right > p {
+        display: inline-block;
+    }
+    .nav-right .signin {
+        text-decoration: none;
+        color: var(--hospital-green);
+        font-weight: 500;
+        padding: 0 28px;
+        margin-left: 12px;
+    
+    
+    }
+    .nav-right .cart {
+        position: relative;
+    
+    }
+    .nav-right .cart .numbers {
+        position: absolute;
+        top: -2px;
+        right: 14%;
+        font-size: 1rem;
+        font-weight: bold;
+    }
+}
