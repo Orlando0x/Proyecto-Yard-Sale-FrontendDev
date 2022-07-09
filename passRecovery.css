@@ -91,10 +91,11 @@ div p a {
 }
 
 @media (min-width: 640px) {
-    header img {
+    .container img {
         display: none;
     }
     main {
         place-items:center;
     }
 }
+

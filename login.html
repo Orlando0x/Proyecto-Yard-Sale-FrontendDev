@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>navBar</title>
-    <link rel="stylesheet" href="./navBarDesktop.css">
+    <title>Login</title>
+    <link rel="stylesheet" href="./login.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -13,9 +13,9 @@
 <body>
     <header>
         <nav class="nav">
-            <a class="menu" href="/"><img src="./icons/icon_menu.svg" alt="menu"></a>
+            <a class="menu" href="./menuMobile.html"><img src="./icons/icon_menu.svg" alt="menu"></a>
             <section class="nav-left">
-                <a class="logo" href="/"><img src="./logos/logo_yard_sale.svg" alt="LOGO"></a>
+                <a class="logo" href="./principal.html"><img src="./logos/logo_yard_sale.svg" alt="LOGO"></a>
                 <ul class="options">
                     <li><a class="all" href="">All</a></li>
                     <li><a href="">Clothes</a></li>
@@ -26,7 +26,7 @@
                 </ul>
             </section>
             <div class="nav-right">
-                <p><a class="signin" href="">Sign in</a></p>
+                <p><a class="signin" href="./login.html">Sign in</a></p>
                 <div class="cart">
                     <img src="./icons/icon_shopping_cart_notification.svg" alt="ShopCart">
                     <div class="numbers">2</div>
@@ -34,6 +34,24 @@
             </div>
         </nav>
     </header>
-    <nav></nav>
+    <main>
+        <section class="container">
+            <header>
+                <img src="./logos/logo_yard_sale.svg" alt="LOGO">
+            </header>
+            <form action="/" class="main-form">
+                <label for="email">Email address</label>
+                <input type="email" id="email" placeholder="email@example.com">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="*********">
+                <button type="submit">Log in</button>
+            </form>
+            <p class="div-resend"><a href="./passRecovery.html">Forgot my password</a></p>
+            <Footer>
+                <button class="signUp" type="submit">Sign up</button>
+            </Footer>
+        </section>
+        
+    </main>
 </body>
 </html>
