@@ -14,7 +14,7 @@
 <body>
     <header>
         <nav class="nav">
-            <a class="menu" href="/"><img src="./icons/icon_menu.svg" alt="menu"></a>
+            <a class="menu" href="#"><img class="menu-img" src="./icons/icon_menu.svg" alt="menu"></a>
             <section class="nav-left">
                 <a class="logo" href="/"><img src="./logos/logo_yard_sale.svg" alt="LOGO"></a>
                 <ul class="options">
@@ -25,6 +25,25 @@
                     <li><a href="">Toys</a></li>
                     <li><a href="">Others</a></li>
                 </ul>
+                <section class="container-menuMobile">
+                    <nav>
+                        <a href="">CATEGORIES</a>
+                        <a href="">All</a>
+                        <a href="">Clothes</a>
+                        <a href="">Electronics</a>
+                        <a href="">Furnitures</a>
+                        <a href="">Toys</a>
+                        <a href="">Others</a>
+                    </nav>
+                    <div class="my">
+                        <a href="./myOrder.html">My orders</a>
+                        <a href="./myAccountEdit.html">My account</a>
+                    </div>
+                    <div class="logOut">
+                        <a href="./myAccountEdit.html">correo@example.com</a>
+                        <a href="./login.html">Sign out</a>
+                    </div>
+                </section>
             </section>
             <div class="nav-right">
                 <p><a class="signin" href="#">correo@gmail.com</a></p>
@@ -42,7 +61,73 @@
             </div>
         </nav>
     </header>
-    <nav></nav>
+    <aside class="inactive3">
+        <div class="nav-cart">
+            <img src="./icons/flecha.png" alt="">
+            <p>Shopping cart</p>
+        </div>
+        
+        <section class="main-list-products">
+            <div class="products">
+                <img class="product-img" src="./bike.jpg" alt="product">
+                <p>Bike 29"</p>
+                <p>$ 120,00</p>
+                <img class="close" src="./icons/icon_close.png" alt="">
+            </div>
+            <div class="products">
+                <img class="product-img" src="./bike.jpg" alt="product">
+                <p>Bike 29"</p>
+                <p>$ 120,00</p>
+                <img class="close" src="./icons/icon_close.png" alt="">
+            </div>
+            <div class="products">
+                <img class="product-img" src="./bike.jpg" alt="product">
+                <p>Bike 29"</p>
+                <p>$ 120,00</p>
+                <img class="close" src="./icons/icon_close.png" alt="">
+            </div>
+            <div class="products">
+                <img class="product-img" src="./bike.jpg" alt="product">
+                <p>Bike 29"</p>
+                <p>$ 120,00</p>
+                <img class="close" src="./icons/icon_close.png" alt="">
+            </div>
+            <div class="products">
+                <img class="product-img" src="./bike.jpg" alt="product">
+                <p>Bike 29"</p>
+                <p>$ 120,00</p>
+                <img class="close" src="./icons/icon_close.png" alt="">
+            </div>
+            <div class="products">
+                <img class="product-img" src="./bike.jpg" alt="product">
+                <p>Bike 29"</p>
+                <p>$ 120,00</p>
+                <img class="close" src="./icons/icon_close.png" alt="">
+            </div>
+            <div class="products">
+                <img class="product-img" src="./bike.jpg" alt="product">
+                <p>Bike 29"</p>
+                <p>$ 120,00</p>
+                <img class="close" src="./icons/icon_close.png" alt="">
+            </div>
+            <div class="products">
+                <img class="product-img" src="./bike.jpg" alt="product">
+                <p>Bike 29"</p>
+                <p>$ 120,00</p>
+                <img class="close" src="./icons/icon_close.png" alt="">
+            </div>
+        </section>
+        <div class="checkout">
+            <section class="main-total">
+                <div>
+                    <p>Total</p>
+                </div>
+                <p>$ 560.00</p>
+            </section>
+            <button type="submit">Checkout</button>
+        </div>
+    </aside>
+
     <script src="./main.js"></script>
 </body>
 </html>

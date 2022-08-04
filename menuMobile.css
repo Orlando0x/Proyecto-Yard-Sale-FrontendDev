@@ -21,7 +21,7 @@ body{
 main {
 
 }
-.container {
+.container-menuMobile {
     display: flex;
     flex-direction: column;
     margin: 16px;
@@ -44,7 +44,7 @@ nav {
     margin-bottom: 36px;
     padding-top: 4px;
 }
-.container > a {
+.container-menuMobile > a {
 
     color: var(--hospital-green);  
     padding-top: 18px;

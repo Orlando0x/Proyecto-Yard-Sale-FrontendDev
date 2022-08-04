@@ -1,3 +1,4 @@
+/* General */
 :root{
     --white: #FFFFFF;
     --black: #000000;
@@ -19,13 +20,14 @@ body{
     font-family: 'Quicksand', sans-serif;
 }
 
+/*  header */
+
 .nav {
     display: flex;
     justify-content: space-between;
     width: 100%;
     height: 60px;
     border-bottom: 2px solid var(--text-input-field);
-
 }
 .nav .menu {
     display: none;
@@ -37,7 +39,6 @@ body{
 }
 .nav .logo img{
     height: 32px;
-    margin-left:;
 }
 .nav .options {
     display: flex;
@@ -94,17 +95,16 @@ body{
     font-weight: bold;
 }
 
-/* ------------------------- */
+/* Opciones email */
 
 .nav-right .inactive {
     display: block;
-
 }
 .container {
     position: absolute;
     display: none;
     top: 60px;
-    right: 100px;
+
     width: 140px;
     height: 180px;
     background-color: var(--white) ;
@@ -134,12 +134,155 @@ body{
     text-decoration: none;
     font-weight: bold;
 }
-.container div:nth-child(1) {
 
+/* Opciones hamburger menu */
+.nav-left .container-menuMobile {
+    position:absolute;
+    top: 20px;
+    left: 0;
+    display: none;
+    flex-direction: column;
+    margin: 16px;
+    padding: 0 16px;
+    text-align: left;
+}
+.container-menuMobile a {
+    display: block;
+    margin: 28px 0px;
+    color: var(--black);
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+}
+.container-menuMobile nav {
+    border-bottom: 1px solid var(--text-input-field);
+    padding-bottom: 4px;
+}
+.my {
+    margin-bottom: 36px;
+    padding-top: 4px;
+}
+.container-menuMobile > a {
+
+    color: var(--hospital-green);  
+    padding-top: 18px;
+    font-size: 1.4rem;
+}
+.logOut a {
+    margin: 4px 0;
+    font-size: 1.4rem;
+}
+.logOut a:nth-child(1) {
+    color: var(--black);
+    font-weight: 400;
+}
+.logOut a:nth-child(2) {
+    color: var(--hospital-green);
+}
+
+/* aside de shopping cart */
+.nav-cart {
+    display: none;
+}
+.nav-cart p {
+    font-weight: bold;
+}
+aside {
+    display:grid;
+    place-content: start center;
+    height: 80vh;
+}
+aside > p {
+    font-weight: bold;
+    margin: 70px 0 20px;
+    display: none;
+}
+.main-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 340px;
+    height: 70px;
+
+    background-color: var(--text-input-field);
+    border-radius: 12px;
+}
+.main-total p {
+    margin: 0 16px;
+    
+}
+.main-total div p:nth-child(1){
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+.main-total div p:nth-child(2){
+    font-weight: 300;
+    font-size: 1.4rem;
+    margin-top: 4px;
+}
+.main-total > p {
+    font-weight: bold;
+}
+.main-list-products {
+    display: grid;
+    grid-template-rows: repeat(auto-fill, 80px);
+    margin: 24px 0;
+    gap: 24px;
+    /* agrega scroll cuando los items pasan el view */
+    overflow-y: scroll;
+}
+.main-list-products .products {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
 }
 
+.main-list-products div .product-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+.main-list-products div .close {
+    width: 16px;
+    height: 16px;
+}
+.main-list-products div p:nth-child(2) {
 
+    color: var(--dark);
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+.main-list-products div p:nth-child(3) {
+    font-weight: bold;
+    margin-left: 60px;
+}
+
+.checkout {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: flex-end;
+
+}
+button {
+    text-align: center;
+    height: 50px;
+    width: 340px;
+    margin-top: 16px;
+    border-radius: 8px;
+    border: none;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: var(--white);
+    background-color: var(--hospital-green);
+    cursor: pointer;
+    border: 1px solid var(--hospital-green);
+}
+.inactive3 {
+    display: none;
+}
 
 
 
@@ -151,13 +294,9 @@ body{
     .nav .menu {
         display: inline-block;
         margin-left: 16px;
-
     }
     .nav-left {
         margin-left: 0;
-    }
-    .nav .menu img {
-
     }
     .nav .options {
         display: none;
@@ -168,5 +307,34 @@ body{
     .nav-right .signin {
         display: none;
     }
+    .nav-left .inactive2 {
+        display: flex;
+    }
+    .nav-right .container {
+        display: none;
+    }
+}
+
+@media (min-width: 800px) {
+
+    aside {
+        display:grid;
+        place-content: start end;
+        height: 80vh;
+        margin-right: 20px;
+    }
+    .nav-cart {
+        display: flex;
+        align-items: center;
+        
+    }
+    .nav-cart img {
+        height: 20px;
+        margin-right: 24px;
+    }
+    aside > p {
+        display: block;
+    }
+
 }
 

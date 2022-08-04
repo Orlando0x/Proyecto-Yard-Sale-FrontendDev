@@ -19,18 +19,18 @@ body{
     font-size: 1.6rem;
     font-family: 'Quicksand', sans-serif;
 }
-.nav {
+.nav-cart {
     display: none;
 }
-.nav p {
+.nav-cart p {
     font-weight: bold;
 }
-main {
+aside {
     display:grid;
     place-content: start center;
     height: 99vh;
 }
-main > p {
+aside > p {
     font-weight: bold;
     margin: 70px 0 20px;
     display: none;
@@ -121,22 +121,22 @@ button {
 
 @media (min-width: 800px) {
 
-    main {
+    aside {
         display:grid;
         place-content: start end;
         height: 99vh;
         margin-right: 20px;
     }
-    .nav {
+    .nav-cart {
         display: flex;
         align-items: center;
         
     }
-    .nav img {
+    .nav-cart img {
         height: 20px;
         margin-right: 24px;
     }
-    main > p {
+    aside > p {
         display: block;
     }
 
