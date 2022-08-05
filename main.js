@@ -61,17 +61,17 @@ const productList = [];
 productList.push({
     name: `Bike 20"`,
     price: 120,
-    image: "./bike.jpg" 
+    image: "https://i.ibb.co/mFFDjtj/bike.jpg.jpg" 
 })
 productList.push({
     name: `Bike 26"`,
     price: 160,
-    image: "./bike.jpg" 
+    image: "https://i.ibb.co/mFFDjtj/bike.jpg.jpg" 
 })
 productList.push({
     name: `Bike 29"`,
     price: 200,
-    image: "./bike.jpg" 
+    image: "https://i.ibb.co/mFFDjtj/bike.jpg.jpg" 
 })
 productList.push ({
     name:'Bicycle seat bag',
@@ -81,7 +81,7 @@ productList.push ({
 productList.push({
     name: `Bike 16"`,
     price: 80,
-    image: "./bike.jpg"  
+    image: "https://i.ibb.co/mFFDjtj/bike.jpg.jpg"  
 })
 productList.push ({
     name:'Tennis Montain Bike',

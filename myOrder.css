@@ -238,6 +238,7 @@ aside > p {
     gap: 24px;
     /* agrega scroll cuando los items pasan el view */
     overflow-y: scroll;
+    height: 70vh;
 }
 .main-list-products .products {
     display: flex;
@@ -308,11 +309,12 @@ main > p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 300px;
+    width: 340px;
     height: 70px;
     margin-top: 24px;
     background-color: var(--text-input-field);
     border-radius: 12px;
+    padding: 0 12px;
 }
 .main-total p {
     margin: 0 16px;
@@ -330,12 +332,7 @@ main > p {
 .main-total > p {
     font-weight: bold;
 }
-.main-list-products {
-    display: grid;
-    grid-template-rows: repeat(auto-fill, 80px);
-    margin: 24px 0;
-    gap: 24px;
-}
+
 .main-list-products div img {
     width: 80px;
     height: 80px;
