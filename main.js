@@ -5,11 +5,14 @@ const menuList = document.querySelector(".container-menuMobile")
 const cart = document.querySelector(".cart");
 const shoppCart = document.querySelector("aside");
 const cardsContainer = document.querySelector(".cards-container");
+const containerDesciption = document.querySelector(".container-description");
+const closeDescriptionIcon = document.querySelector(".close");
 
 
 cart.addEventListener("click", toggleCart);
 emailUser.addEventListener("click", toggleMenu);
 menuMobile.addEventListener("click", toggleMenuMobile);
+closeDescriptionIcon.addEventListener("click", closeDescription)
 
 
 function toggleCart() {
@@ -17,12 +20,13 @@ function toggleCart() {
     shoppCart.classList.toggle("inactive3");
     menuList.classList.remove("inactive2");
     smallMenu.classList.remove("inactive");
-
+    containerDesciption.classList.add("inactive3")
 }
 
 function toggleMenuMobile() {
     menuList.classList.toggle("inactive2");
     shoppCart.classList.add("inactive3");
+    containerDesciption.classList.add("inactive3")
 
 }
 
@@ -30,7 +34,22 @@ function toggleMenu() {
     /* smallMenu.setAttribute("style", "display: block"); */
     smallMenu.classList.toggle("inactive");
     shoppCart.classList.add("inactive3");
+    containerDesciption.classList.add("inactive3")
 }
+function openDescription(){
+    console.log("vamos bien");
+    containerDesciption.classList.remove("inactive3")
+    shoppCart.classList.add("inactive3");
+    smallMenu.classList.remove("inactive");
+    menuList.classList.remove("inactive2");
+}
+function closeDescription(){
+    containerDesciption.classList.add("inactive3")
+
+
+}
+
+
 
 const productList = [];
 
@@ -91,8 +110,9 @@ for(product of productList){
     const productCard = document.createElement("div")
     productCard.classList.add("product-card")
 
-    const imgProduct = document.createElement("img")
-    imgProduct.setAttribute("src", product.image)
+    const imgProduct = document.createElement("img");
+    imgProduct.setAttribute("src", product.image);
+    imgProduct.addEventListener("click", openDescription);
     
     const productCardDown = document.createElement("div")
     productCardDown.classList.add("product-card_down")
@@ -122,3 +142,7 @@ for(product of productList){
 
     cardsContainer.appendChild(productCard);
 }
+
+
+
+
