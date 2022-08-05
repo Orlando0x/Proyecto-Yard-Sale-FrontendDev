@@ -7,12 +7,14 @@ const shoppCart = document.querySelector("aside");
 const cardsContainer = document.querySelector(".cards-container");
 const containerDesciption = document.querySelector(".container-description");
 const closeDescriptionIcon = document.querySelector(".close");
+const CloseArrow = document.querySelector("#closeArrow");
 
 
 cart.addEventListener("click", toggleCart);
 emailUser.addEventListener("click", toggleMenu);
 menuMobile.addEventListener("click", toggleMenuMobile);
 closeDescriptionIcon.addEventListener("click", closeDescription)
+CloseArrow.addEventListener("click", closeShoppingCart)
 
 
 function toggleCart() {
@@ -31,7 +33,7 @@ function toggleMenuMobile() {
 }
 
 function toggleMenu() {
-    /* smallMenu.setAttribute("style", "display: block"); */
+    /* smallMenu.setAttribute("style", "display: block");  otra forma */
     smallMenu.classList.toggle("inactive");
     shoppCart.classList.add("inactive3");
     containerDesciption.classList.add("inactive3")
@@ -46,9 +48,11 @@ function openDescription(){
 function closeDescription(){
     containerDesciption.classList.add("inactive3")
 
+}
+function closeShoppingCart() {
+    shoppCart.classList.add("inactive3");
 
 }
-
 
 
 const productList = [];
@@ -91,21 +95,6 @@ productList.push ({
 });
 
 
-/*
-<div class="product-card">
-    <img src="bike.jpg" alt="IMAGEN de PRODUCTO">
-    <div class="product-card_down">
-        <div>
-            <p  >$120,00</p>
-            <p  >Bike</p>
-        </div>
-        <figure class="icon">
-            <img src="./icons/bt_add_to_cart.svg" alt="ICON">
-        </figure>
-    </div>
-</div>
-*/
-
 for(product of productList){
     const productCard = document.createElement("div")
     productCard.classList.add("product-card")
@@ -142,7 +131,3 @@ for(product of productList){
 
     cardsContainer.appendChild(productCard);
 }
-
-
-
-
